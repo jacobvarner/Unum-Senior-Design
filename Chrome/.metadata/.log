@@ -1,0 +1,260 @@
+!SESSION 2017-01-29 13:20:31.406 -----------------------------------------------
+eclipse.buildId=4.6.0.I20160606-1100
+java.version=1.8.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/jacob/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/jacob/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2017-01-29 13:21:01.810
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jface 2 0 2017-01-29 13:21:03.199
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-01-29 13:21:03.199
+!MESSAGE A conflict occurred for ALT+COMMAND+R:
+Binding(ALT+COMMAND+R,
+	ParameterizedCommand(Command(org.python.pydev.debug.setnext,Set Next Statement,
+		,
+		Category(org.python.pydev.ui.category.run,PyDev - Run,Python run category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@708f7386,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+COMMAND+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@377e90b0,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-01-29 13:21:30.572
+!MESSAGE Failed to read Maven project: 1 problem was encountered while building the effective model for com.example.appengine:appengine-helloworld:1.0-SNAPSHOT
+[FATAL] Non-resolvable parent POM for com.example.appengine:appengine-helloworld:1.0-SNAPSHOT: Failure to find com.google.cloud:doc-samples:pom:1.0.0 in https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced and 'parent.relativePath' points at wrong local POM @ line 23, column 11
+ for project com.example.appengine:appengine-helloworld:1.0-SNAPSHOT at /Volumes/Macintosh HD/Google Drive/Auburn/Current/Senior Design - Unum (Yoonum)/Code/Chrome/helloworld/pom.xml
+!STACK 0
+org.apache.maven.project.ProjectBuildingException: 1 problem was encountered while building the effective model for com.example.appengine:appengine-helloworld:1.0-SNAPSHOT
+[FATAL] Non-resolvable parent POM for com.example.appengine:appengine-helloworld:1.0-SNAPSHOT: Failure to find com.google.cloud:doc-samples:pom:1.0.0 in https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced and 'parent.relativePath' points at wrong local POM @ line 23, column 11
+ for project com.example.appengine:appengine-helloworld:1.0-SNAPSHOT at /Volumes/Macintosh HD/Google Drive/Auburn/Current/Senior Design - Unum (Yoonum)/Code/Chrome/helloworld/pom.xml
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:168)
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:119)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readMavenProject(MavenImpl.java:636)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$5.call(ProjectRegistryManager.java:816)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$5.call(ProjectRegistryManager.java:1)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.execute(ProjectRegistryManager.java:967)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:811)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:192)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:80)
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:259)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:732)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$5.run(MavenPomEditor.java:1053)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was encountered while building the effective model for com.example.appengine:appengine-helloworld:1.0-SNAPSHOT
+[FATAL] Non-resolvable parent POM for com.example.appengine:appengine-helloworld:1.0-SNAPSHOT: Failure to find com.google.cloud:doc-samples:pom:1.0.0 in https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced and 'parent.relativePath' points at wrong local POM @ line 23, column 11
+
+	at org.apache.maven.model.building.DefaultModelProblemCollector.newModelBuildingException(DefaultModelProblemCollector.java:197)
+	at org.apache.maven.model.building.DefaultModelBuilder.readParentExternally(DefaultModelBuilder.java:1029)
+	at org.apache.maven.model.building.DefaultModelBuilder.readParent(DefaultModelBuilder.java:800)
+	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:329)
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:161)
+	... 15 more
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2017-01-29 18:08:41.844
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 4 10050 2017-01-29 18:08:41.844
+!MESSAGE Cannot complete the request.  See the error log for details.
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10005 2017-01-29 18:08:41.844
+!MESSAGE "m2e - Maven Integration for Eclipse (includes Incubating components)" will be ignored because it is already installed.
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10005 2017-01-29 18:08:41.844
+!MESSAGE "m2e - slf4j over logback logging (Optional)" will be ignored because it is already installed.
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2017-01-29 18:08:41.851
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 4 10050 2017-01-29 18:08:41.851
+!MESSAGE Cannot complete the request.  See the error log for details.
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10005 2017-01-29 18:08:41.851
+!MESSAGE "m2e - Maven Integration for Eclipse (includes Incubating components)" will be ignored because it is already installed.
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10005 2017-01-29 18:08:41.851
+!MESSAGE "m2e - slf4j over logback logging (Optional)" will be ignored because it is already installed.
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2017-01-29 18:08:41.863
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 4 10050 2017-01-29 18:08:41.863
+!MESSAGE Cannot complete the request.  See the error log for details.
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10005 2017-01-29 18:08:41.863
+!MESSAGE "m2e - Maven Integration for Eclipse (includes Incubating components)" will be ignored because it is already installed.
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10005 2017-01-29 18:08:41.863
+!MESSAGE "m2e - slf4j over logback logging (Optional)" will be ignored because it is already installed.
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2017-01-29 18:08:41.864
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 4 10050 2017-01-29 18:08:41.864
+!MESSAGE Cannot complete the request.  See the error log for details.
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10005 2017-01-29 18:08:41.864
+!MESSAGE "m2e - Maven Integration for Eclipse (includes Incubating components)" will be ignored because it is already installed.
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10005 2017-01-29 18:08:41.864
+!MESSAGE "m2e - slf4j over logback logging (Optional)" will be ignored because it is already installed.
+!SESSION 2017-01-29 18:15:12.037 -----------------------------------------------
+eclipse.buildId=4.6.2.M20161124-1400
+java.version=1.8.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/jacob/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/jacob/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2017-01-29 18:15:31.644
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jface 2 0 2017-01-29 18:15:33.101
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-01-29 18:15:33.101
+!MESSAGE A conflict occurred for ALT+COMMAND+R:
+Binding(ALT+COMMAND+R,
+	ParameterizedCommand(Command(org.python.pydev.debug.setnext,Set Next Statement,
+		,
+		Category(org.python.pydev.ui.category.run,PyDev - Run,Python run category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1c571162,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+COMMAND+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3e0b1f03,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-01-29 18:15:41.192
+!MESSAGE Failed to read Maven project: 1 problem was encountered while building the effective model for com.example.appengine:appengine-helloworld:1.0-SNAPSHOT
+[FATAL] Non-resolvable parent POM for com.example.appengine:appengine-helloworld:1.0-SNAPSHOT: Failure to find com.google.cloud:doc-samples:pom:1.0.0 in https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced and 'parent.relativePath' points at wrong local POM @ line 23, column 11
+ for project com.example.appengine:appengine-helloworld:1.0-SNAPSHOT at /Volumes/Macintosh HD/Google Drive/Auburn/Current/Senior Design - Unum (Yoonum)/Code/Chrome/helloworld/pom.xml
+!STACK 0
+org.apache.maven.project.ProjectBuildingException: 1 problem was encountered while building the effective model for com.example.appengine:appengine-helloworld:1.0-SNAPSHOT
+[FATAL] Non-resolvable parent POM for com.example.appengine:appengine-helloworld:1.0-SNAPSHOT: Failure to find com.google.cloud:doc-samples:pom:1.0.0 in https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced and 'parent.relativePath' points at wrong local POM @ line 23, column 11
+ for project com.example.appengine:appengine-helloworld:1.0-SNAPSHOT at /Volumes/Macintosh HD/Google Drive/Auburn/Current/Senior Design - Unum (Yoonum)/Code/Chrome/helloworld/pom.xml
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:168)
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:119)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readMavenProject(MavenImpl.java:636)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$5.call(ProjectRegistryManager.java:816)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$5.call(ProjectRegistryManager.java:1)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.execute(ProjectRegistryManager.java:967)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:811)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:192)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:80)
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:259)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:732)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$5.run(MavenPomEditor.java:1053)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was encountered while building the effective model for com.example.appengine:appengine-helloworld:1.0-SNAPSHOT
+[FATAL] Non-resolvable parent POM for com.example.appengine:appengine-helloworld:1.0-SNAPSHOT: Failure to find com.google.cloud:doc-samples:pom:1.0.0 in https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced and 'parent.relativePath' points at wrong local POM @ line 23, column 11
+
+	at org.apache.maven.model.building.DefaultModelProblemCollector.newModelBuildingException(DefaultModelProblemCollector.java:197)
+	at org.apache.maven.model.building.DefaultModelBuilder.readParentExternally(DefaultModelBuilder.java:1029)
+	at org.apache.maven.model.building.DefaultModelBuilder.readParent(DefaultModelBuilder.java:800)
+	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:329)
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:161)
+	... 15 more
+!SESSION 2017-01-29 18:58:16.194 -----------------------------------------------
+eclipse.buildId=4.6.2.M20161124-1400
+java.version=1.8.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/jacob/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/jacob/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2017-01-29 18:58:27.585
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jface 2 0 2017-01-29 18:58:29.219
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-01-29 18:58:29.219
+!MESSAGE A conflict occurred for ALT+COMMAND+R:
+Binding(ALT+COMMAND+R,
+	ParameterizedCommand(Command(org.python.pydev.debug.setnext,Set Next Statement,
+		,
+		Category(org.python.pydev.ui.category.run,PyDev - Run,Python run category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6e22d6bf,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+COMMAND+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@32121140,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+!SESSION 2017-01-29 19:25:07.028 -----------------------------------------------
+eclipse.buildId=4.6.2.M20161124-1400
+java.version=1.8.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/jacob/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/jacob/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2017-01-29 19:25:26.653
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jface 2 0 2017-01-29 19:25:28.159
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-01-29 19:25:28.159
+!MESSAGE A conflict occurred for ALT+COMMAND+R:
+Binding(ALT+COMMAND+R,
+	ParameterizedCommand(Command(org.python.pydev.debug.setnext,Set Next Statement,
+		,
+		Category(org.python.pydev.ui.category.run,PyDev - Run,Python run category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@28b286c0,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+COMMAND+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@718e700c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+
+!ENTRY com.google.gdt.eclipse.suite 1 0 2017-01-29 19:25:33.663
+!MESSAGE Registering: com.google.appengine.eclipse.sdkbundle_1.9.34
+
+!ENTRY com.google.gdt.eclipse.suite 1 0 2017-01-29 19:25:33.816
+!MESSAGE Registering: com.google.gwt.eclipse.sdkbundle_2.7.0
+
+!ENTRY com.google.gdt.eclipse.suite.update 1 0 2017-01-29 19:27:18.348
+!MESSAGE Sending POST request to Analytics: {el=speech_v1beta1/Unknown, an=Google Plugin for Eclipse (New), tid=UA-43239122-2, cd10=1485739533461, cd1=org.eclipse.epp.package.java.product, cd4=com.google.gdt.eclipse.suite.e44.feature_3.9.5.v20160706-2035, cd3=3.11.1.v20161107-2032, t=event, cd6=none, cd5=false, v=1, cd8=speech_v1beta1, ea=ADD_MANAGED_API, ec=com.google.gdt.eclipse.managedapis, cid=1485739533461}
+
+!ENTRY com.google.gdt.eclipse.suite.update 1 0 2017-01-29 19:27:18.352
+!MESSAGE Analytics ping request parameters: el=speech_v1beta1%2FUnknown&an=Google%20Plugin%20for%20Eclipse%20%28New%29&tid=UA-43239122-2&cd10=1485739533461&cd1=org.eclipse.epp.package.java.product&cd4=com.google.gdt.eclipse.suite.e44.feature_3.9.5.v20160706-2035&cd3=3.11.1.v20161107-2032&t=event&cd6=none&cd5=false&v=1&cd8=speech_v1beta1&ea=ADD_MANAGED_API&ec=com.google.gdt.eclipse.managedapis&cid=1485739533461
+
+!ENTRY com.google.gdt.eclipse.suite.update 1 0 2017-01-29 19:27:18.490
+!MESSAGE Analytics ping response: 200: OK
+GIF89a  �� ���   ,       D ;
+
+!ENTRY com.google.gdt.eclipse.drive 1 0 2017-01-29 19:27:45.435
+!MESSAGE DriveLoginListener invoked to report login
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2017-01-29 19:39:50.704
+!MESSAGE Failed to load properties file for project 'speech'
+
+!ENTRY com.google.gdt.eclipse.suite.update 1 0 2017-01-29 19:40:31.372
+!MESSAGE Sending POST request to Analytics: {el=speech_v1beta1/Unknown, an=Google Plugin for Eclipse (New), tid=UA-43239122-2, cd10=1485739533461, cd1=org.eclipse.epp.package.java.product, cd4=com.google.gdt.eclipse.suite.e44.feature_3.9.5.v20160706-2035, cd3=3.11.1.v20161107-2032, t=event, cd6=none, cd5=true, v=1, cd8=speech_v1beta1, ea=ADD_MANAGED_API, ec=com.google.gdt.eclipse.managedapis, cid=1485739533461}
+
+!ENTRY com.google.gdt.eclipse.suite.update 1 0 2017-01-29 19:40:31.373
+!MESSAGE Analytics ping request parameters: el=speech_v1beta1%2FUnknown&an=Google%20Plugin%20for%20Eclipse%20%28New%29&tid=UA-43239122-2&cd10=1485739533461&cd1=org.eclipse.epp.package.java.product&cd4=com.google.gdt.eclipse.suite.e44.feature_3.9.5.v20160706-2035&cd3=3.11.1.v20161107-2032&t=event&cd6=none&cd5=true&v=1&cd8=speech_v1beta1&ea=ADD_MANAGED_API&ec=com.google.gdt.eclipse.managedapis&cid=1485739533461
+
+!ENTRY com.google.gdt.eclipse.suite.update 1 0 2017-01-29 19:40:31.516
+!MESSAGE Analytics ping response: 200: OK
+GIF89a  �� ���   ,       D ;
