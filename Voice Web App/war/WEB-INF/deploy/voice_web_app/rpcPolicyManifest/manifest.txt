@@ -1,0 +1,3 @@
+# Module voice_web_app
+# RPC service class, partial path of RPC policy file
+com.unum.client.GreetingService, 25E0858FF680E45C3C78082F40F62329.gwt.rpc

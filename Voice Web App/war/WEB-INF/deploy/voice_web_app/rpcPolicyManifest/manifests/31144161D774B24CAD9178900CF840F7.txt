@@ -1,0 +1,2 @@
+serviceClass: com.unum.client.GreetingService
+path: 25E0858FF680E45C3C78082F40F62329.gwt.rpc
