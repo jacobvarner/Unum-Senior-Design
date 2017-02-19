@@ -1,0 +1,41 @@
+{
+  "userSays": [
+    {
+      "id": "0f9cf7ae-0199-4e4c-b68d-ddab047d2595",
+      "data": [
+        {
+          "text": "Check the status of my Unum claim"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "5fad5654-1bcc-4dcc-98ea-796e76ea785b",
+  "name": "Check the status of my Unum claim",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "speech": [
+            "Unum does not have a claim application on file for you, please contact customer support at 555-555-5555.",
+            "Your claim is currently being processed.",
+            "Your claim has been approved.",
+            "Your claim has been processed. Please contact customer service at 555-555-5555 for more information."
+          ]
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}
