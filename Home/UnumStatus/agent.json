@@ -1,12 +1,14 @@
 {
+  "description": "Gives the status update for Unum claims",
   "language": "en",
   "enabledDomainFeatures": [
     "smalltalk-domain-on",
     "smalltalk-fulfillment-on"
   ],
-  "enableFulfillment": false,
   "googleAssistant": {
-    "googleAssistantCompatible": false,
+    "googleAssistantCompatible": true,
+    "invocationName": "Unum",
+    "project": "senior-design-spring-2017",
     "welcomeIntentSignInRequired": false,
     "startIntents": [],
     "endIntentIds": [],
@@ -18,9 +20,14 @@
   },
   "defaultTimezone": "",
   "webhook": {
-    "available": false,
+    "url": "https://bxl5wtmfp1.execute-api.us-west-2.amazonaws.com/beta",
+    "headers": {
+      "": ""
+    },
+    "available": true,
     "useForDomains": false
   },
+  "isPrivate": true,
   "customClassifierMode": "use.after",
   "mlMinConfidence": 0.2
 }

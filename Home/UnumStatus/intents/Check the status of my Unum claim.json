@@ -1,10 +1,40 @@
 {
   "userSays": [
     {
+      "id": "6e4bfe69-247b-4cb4-83aa-ff4bde333b1d",
+      "data": [
+        {
+          "text": "Unum Claim status"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "afe9d515-9967-4aec-8686-fbc2e8284181",
+      "data": [
+        {
+          "text": "Unum Status"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "b82edb93-c31b-452b-ab48-73faa62bfe2a",
+      "data": [
+        {
+          "text": "Unum claim"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
       "id": "0f9cf7ae-0199-4e4c-b68d-ddab047d2595",
       "data": [
         {
-          "text": "Check the status of my Unum claim"
+          "text": "Check the status of my unum claim"
         }
       ],
       "isTemplate": false,
@@ -18,24 +48,24 @@
   "responses": [
     {
       "resetContexts": false,
+      "action": "Response",
       "affectedContexts": [],
       "parameters": [],
       "messages": [
         {
           "type": 0,
-          "speech": [
-            "Unum does not have a claim application on file for you, please contact customer support at 555-555-5555.",
-            "Your claim is currently being processed.",
-            "Your claim has been approved.",
-            "Your claim has been processed. Please contact customer service at 555-555-5555 for more information."
-          ]
+          "speech": "Sorry, your request could not be completed right now."
         }
       ]
     }
   ],
   "priority": 500000,
-  "webhookUsed": false,
+  "webhookUsed": true,
   "webhookForSlotFilling": false,
   "fallbackIntent": false,
-  "events": []
+  "events": [
+    {
+      "name": "GOOGLE_ASSISTANT_WELCOME"
+    }
+  ]
 }
