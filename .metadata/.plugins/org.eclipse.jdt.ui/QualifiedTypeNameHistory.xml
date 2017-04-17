@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.google.cloud.speech.v1beta1.SpeechGrpc"/>
+<fullyQualifiedTypeName name="com.google.auth.oauth2.GoogleCredentials"/>
+<fullyQualifiedTypeName name="com.google.cloud.speech.v1beta1.StreamingRecognizeResponse"/>
+<fullyQualifiedTypeName name="com.google.cloud.speech.v1beta1.StreamingRecognitionResult"/>
+<fullyQualifiedTypeName name="com.google.cloud.speech.v1beta1.StreamingRecognizeRequest"/>
+<fullyQualifiedTypeName name="com.google.cloud.speech.v1beta1.StreamingRecognitionConfig"/>
+<fullyQualifiedTypeName name="java.time.Duration"/>
+</qualifiedTypeNameHistroy>

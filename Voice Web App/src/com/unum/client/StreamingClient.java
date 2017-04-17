@@ -3,9 +3,14 @@ package com.unum.client;
 import static org.apache.log4j.ConsoleAppender.SYSTEM_OUT;
 
 import com.google.auth.oauth2.GoogleCredentials;
+//Imports the Google Cloud client library
+import com.google.cloud.speech.spi.v1beta1.SpeechClient;
+import com.google.cloud.speech.v1beta1.RecognitionAudio;
 import com.google.cloud.speech.v1beta1.RecognitionConfig;
 import com.google.cloud.speech.v1beta1.RecognitionConfig.AudioEncoding;
 import com.google.cloud.speech.v1beta1.SpeechGrpc;
+import com.google.cloud.speech.v1beta1.SpeechRecognitionAlternative;
+import com.google.cloud.speech.v1beta1.SpeechRecognitionResult;
 import com.google.cloud.speech.v1beta1.StreamingRecognitionConfig;
 import com.google.cloud.speech.v1beta1.StreamingRecognitionResult;
 import com.google.cloud.speech.v1beta1.StreamingRecognizeRequest;
