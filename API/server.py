@@ -1,5 +1,6 @@
 import random
 def lambda_handler(event, context):
+    #TODO: Insert parsing of GET request. Use information from Process assigmnent
     random.seed()
     itemno = random.randint(0, 3)
     if itemno == 0:
