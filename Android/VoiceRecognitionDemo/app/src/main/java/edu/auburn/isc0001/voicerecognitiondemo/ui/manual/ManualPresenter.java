@@ -9,20 +9,17 @@ import android.speech.SpeechRecognizer;
 import android.speech.tts.TextToSpeech;
 import android.support.annotation.Nullable;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
 import edu.auburn.isc0001.voicerecognitiondemo.network.API;
 import edu.auburn.isc0001.voicerecognitiondemo.network.ApiResponse;
 import edu.auburn.isc0001.voicerecognitiondemo.network.RetrofitHelper;
-import edu.auburn.isc0001.voicerecognitiondemo.ui.intent.IntentActivity;
 import nucleus5.presenter.Presenter;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
-import timber.log.Timber;
 
 public class ManualPresenter extends Presenter<ManualActivity>
         implements TextToSpeech.OnInitListener, RecognitionListener {

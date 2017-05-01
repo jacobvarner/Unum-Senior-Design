@@ -16,7 +16,6 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
-import timber.log.Timber;
 
 public class IntentPresenter extends Presenter<IntentActivity>
         implements TextToSpeech.OnInitListener {
@@ -56,7 +55,6 @@ public class IntentPresenter extends Presenter<IntentActivity>
         ArrayList<String> matches = data
                 .getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
         if (matches.size() > 0) {
-            Timber.d(matches.get(0));
             runApiCall();
         }
     }

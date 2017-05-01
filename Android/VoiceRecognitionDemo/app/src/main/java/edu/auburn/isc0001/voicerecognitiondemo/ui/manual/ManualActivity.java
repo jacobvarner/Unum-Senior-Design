@@ -1,9 +1,7 @@
 package edu.auburn.isc0001.voicerecognitiondemo.ui.manual;
 
-import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
-import android.speech.RecognizerIntent;
 import android.support.annotation.NonNull;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.Toolbar;

@@ -4,8 +4,6 @@ import android.app.Application;
 
 import com.squareup.leakcanary.LeakCanary;
 
-import timber.log.Timber;
-
 public class App extends Application {
     @Override
     public void onCreate() {
@@ -18,16 +16,5 @@ public class App extends Application {
             return;
         }
         LeakCanary.install(this);
-
-        // Initialize logger
-        if (BuildConfig.DEBUG) {
-            Timber.plant(new Timber.DebugTree() {
-                @Override
-                protected String createStackElementTag(StackTraceElement element) {
-                    return super.createStackElementTag(element) + ":"
-                            + element.getLineNumber();
-                }
-            });
-        }
     }
 }
